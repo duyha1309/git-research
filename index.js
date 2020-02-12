@@ -1,5 +1,10 @@
 function hello() {
   console.log("say hello!");
   var name = "abc";
+  this.bravo = false;
 }
-module.exports = hello; 
+hello.prototype.bravo = function () {
+  this.bravo = true;
+};
+
+modules.exports = hello; 
